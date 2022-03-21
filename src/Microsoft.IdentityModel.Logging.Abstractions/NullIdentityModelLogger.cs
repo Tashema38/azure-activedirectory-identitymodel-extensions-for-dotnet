@@ -27,26 +27,27 @@
 
 using System.Diagnostics.Tracing;
 
-namespace Microsoft.IdentityModel.Logging
+namespace Microsoft.IdentityModel.Logging.Abstractions
 {
     /// <summary>
-    /// Defines the structure of a log entry.
+    /// A minimalistic <see cref="IIdentityLogger"/> implementation that is disabled by default and doesn't log.
     /// </summary>
-    public class LogEntry
+    public sealed class NullIdentityModelLogger : IIdentityLogger
     {
         /// <summary>
-        /// Defines the <see cref="EventLevel"/>.
+        /// Default instance of <see cref="NullIdentityModelLogger"/>.
         /// </summary>
-        public EventLevel EventLevel { get; set; }
+        public static NullIdentityModelLogger Instance { get; } = new NullIdentityModelLogger();
 
-        /// <summary>
-        /// Message to be logged.
-        /// </summary>
-        public string Message { get; set; }
+        private NullIdentityModelLogger() { }
 
-        /// <summary>
-        /// A unique identifier for a request that can help with diagnostics across components.
-        /// </summary>
-        public string CorrelationId { get; set; }
+        /// <inheritdoc/>
+        public bool IsEnabled(EventLevel eventLevel) => false;
+
+        /// <inheritdoc/>
+        public void Log(LogEntry entry)
+        {
+            // no-op
+        }
     }
 }

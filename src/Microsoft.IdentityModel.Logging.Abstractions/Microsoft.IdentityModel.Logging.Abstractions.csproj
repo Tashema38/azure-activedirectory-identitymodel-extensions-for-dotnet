@@ -3,11 +3,11 @@
   <Import Project="..\..\build\common.props" />
 
   <PropertyGroup>
-    <AssemblyName>Microsoft.IdentityModel.Logging</AssemblyName>
-    <Description>Includes Event Source based logging support.</Description>
+    <AssemblyName>Microsoft.IdentityModel.Logging.Abstractions</AssemblyName>
+    <Description>Includes custom logging interface support.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageId>Microsoft.IdentityModel.Logging</PackageId>
-    <PackageTags>.NET;Windows;Authentication;Identity;Logging</PackageTags>
+    <PackageId>Microsoft.IdentityModel.Logging.Abstractions</PackageId>
+    <PackageTags>.NET;Windows;Authentication;Identity;Logging;Abstractions</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -24,10 +24,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Microsoft.IdentityModel.Logging.Abstractions\Microsoft.IdentityModel.Logging.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

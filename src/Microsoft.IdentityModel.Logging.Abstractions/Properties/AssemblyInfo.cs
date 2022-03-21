@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 //
 // Copyright (c) Microsoft Corporation.
 // All rights reserved.
@@ -25,25 +25,14 @@
 //
 //------------------------------------------------------------------------------
 
-using System.Diagnostics.Tracing;
+using System;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
-namespace Microsoft.IdentityModel.Logging
-{
-    /// <summary>
-    /// Interface for Logging.
-    /// </summary>
-    public interface IIdentityLogger
-    {
-        /// <summary>
-        /// Checks to see if logging is enabled at given <paramref name="eventLevel"/>.
-        /// </summary>
-        /// <param name="eventLevel">Log level of an Event.</param>
-        bool IsEnabled(EventLevel eventLevel);
-
-        /// <summary>
-        /// Writes a log entry.
-        /// </summary>
-        /// <param name="entry">Defines a structured message to be logged at the provided <see cref="LogEntry.EventLevel"/>.</param>
-        void Log(LogEntry entry);
-    }
-}
+[assembly: AssemblyInformationalVersion("0.0.1")]
+[assembly: AssemblyFileVersion("0.0.1")]
+[assembly: AssemblyMetadata("Serviceable", "True")]
+[assembly: AssemblyVersion("0.0.1")]
+[assembly: CLSCompliant(true)]
+[assembly: ComVisible(false)]
