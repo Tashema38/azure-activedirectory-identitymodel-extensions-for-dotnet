@@ -3,11 +3,11 @@
   <Import Project="..\..\build\common.props" />
 
   <PropertyGroup>
-    <AssemblyName>Microsoft.IdentityModel.Logging.Abstractions</AssemblyName>
-    <Description>Includes custom logging interface support.</Description>
+    <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
+    <Description>Container for Wilson interfaces.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageId>Microsoft.IdentityModel.Logging.Abstractions</PackageId>
-    <PackageTags>.NET;Windows;Authentication;Identity;Logging;Abstractions</PackageTags>
+    <PackageId>Microsoft.IdentityModel.Abstractions</PackageId>
+    <PackageTags>.NET;Windows;Authentication;Identity;Abstractions</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">

@@ -97,7 +97,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.IdentityModel.Val
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.IdentityModel.SampleTests", "test\Microsoft.IdentityModel.SampleTests\Microsoft.IdentityModel.SampleTests.csproj", "{578FDF8F-6568-448A-AB93-D94269593932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.IdentityModel.Logging.Abstractions", "src\Microsoft.IdentityModel.Logging.Abstractions\Microsoft.IdentityModel.Logging.Abstractions.csproj", "{403A7717-7EBA-468F-8767-7780EDCA8354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.IdentityModel.Abstractions", "src\Microsoft.IdentityModel.Abstractions\Microsoft.IdentityModel.Abstractions.csproj", "{403A7717-7EBA-468F-8767-7780EDCA8354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

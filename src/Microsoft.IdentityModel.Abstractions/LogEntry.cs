@@ -27,23 +27,26 @@
 
 using System.Diagnostics.Tracing;
 
-namespace Microsoft.IdentityModel.Logging.Abstractions
+namespace Microsoft.IdentityModel.Abstractions
 {
     /// <summary>
-    /// Interface for Logging.
+    /// Defines the structure of a log entry.
     /// </summary>
-    public interface IIdentityLogger
+    public class LogEntry
     {
         /// <summary>
-        /// Checks to see if logging is enabled at given <paramref name="eventLevel"/>.
+        /// Defines the <see cref="EventLevel"/>.
         /// </summary>
-        /// <param name="eventLevel">Log level of an Event.</param>
-        bool IsEnabled(EventLevel eventLevel);
+        public EventLevel EventLevel { get; set; }
 
         /// <summary>
-        /// Writes a log entry.
+        /// Message to be logged.
         /// </summary>
-        /// <param name="entry">Defines a structured message to be logged at the provided <see cref="LogEntry.EventLevel"/>.</param>
-        void Log(LogEntry entry);
+        public string Message { get; set; }
+
+        /// <summary>
+        /// A unique identifier for a request that can help with diagnostics across components.
+        /// </summary>
+        public string CorrelationId { get; set; }
     }
 }

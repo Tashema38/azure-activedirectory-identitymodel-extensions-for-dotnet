@@ -30,7 +30,7 @@ using System.Diagnostics.Tracing;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using Microsoft.IdentityModel.Logging.Abstractions;
+using Microsoft.IdentityModel.Abstractions;
 
 namespace Microsoft.IdentityModel.Logging
 {

@@ -19,6 +19,7 @@
       <project name="Microsoft.IdentityModel.KeyVaultExtensions" />
       <project name="Microsoft.IdentityModel.ManagedKeyVaultSecurityKey" />
       <project name="Microsoft.IdentityModel.Validators" />
+      <project name="Microsoft.IdentityModel.Abstractions" />
     </src>
     <test>
       <project name="CrossVersionTokenValidation.Tests" test="yes"/>

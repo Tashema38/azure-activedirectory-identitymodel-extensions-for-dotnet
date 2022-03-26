@@ -27,7 +27,7 @@
 
 using System.Diagnostics.Tracing;
 
-namespace Microsoft.IdentityModel.Logging.Abstractions
+namespace Microsoft.IdentityModel.Abstractions
 {
     /// <summary>
     /// A minimalistic <see cref="IIdentityLogger"/> implementation that is disabled by default and doesn't log.
